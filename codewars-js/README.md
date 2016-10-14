@@ -1,9 +1,11 @@
-Codewars' JavaScript problems
+##Codewars' JavaScript problems
 
-#1 Spin Words
+1. Spin Words
 
-#2 Song Decoder
+2. Song Decoder
 
-#3 Square/Cube/Average/Sum/Even/Odd
+3. Square/Cube/Average/Sum/Even/Odd
 
-#4 Building Volume
+4. Building Volume
+
+5. Square Every Digit

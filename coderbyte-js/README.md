@@ -1,9 +1,9 @@
-Toy problems from coderbyte.com
+##Coderbyte's Javascript Problems
 
-#1 First Reverse
+1. First Reverse
 
-#2 Letter Changes
+2. Letter Changes
 
-#3 First Factorial
+3. First Factorial
 
-#4 Simple Adding
+4. Simple Adding

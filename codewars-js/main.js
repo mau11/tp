@@ -161,3 +161,26 @@ function findNb(m) {
   }
   return (-1);
 }
+
+
+//FRIDAY, 10/14/16
+
+//#5
+/*Welcome. In this kata, you are asked to square every digit of a number.
+For example, if we run 9119 through the function, 811181 will come out.
+Note: The function accepts an integer and returns an integer*/
+function squareDigits(num){
+  //create an array to store values
+  var results = [];
+  num = num.toString(); //convert to string to us split method
+  //split numbers =>creates an array
+  num = num.split('');
+  //map through values to square
+  var integer = num.map(function(value){
+    return value * value;
+  });
+  //join values, convert to number
+  var results = Number(integer.join(''));
+  //return number
+  return results;
+}

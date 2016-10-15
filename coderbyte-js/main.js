@@ -93,11 +93,9 @@ function LetterCapitalize(str) {
   str = str.replace(/\b[a-z]/g, function(letter){
     return letter.toUpperCase();
   });
-  console.log(str);
   return str;
 }    
-//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp                     
-LetterCapitalize('heelo there');
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp 
 
 
 //

@@ -7,3 +7,5 @@
 3. First Factorial
 
 4. Simple Adding
+
+5. Letter Capitalize

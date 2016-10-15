@@ -80,4 +80,24 @@ function simpleAdding(num){
 }
 
 
+//SATURDAY, 10/15/16
+
+//#5
+/*Using the JavaScript language, have the function LetterCapitalize(str) take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space. 
+Sample Test Cases
+Input:"hello world"
+Output:"Hello World"
+Input:"i ran there"
+Output:"I Ran There"*/
+function LetterCapitalize(str) {
+  str = str.replace(/\b[a-z]/g, function(letter){
+    return letter.toUpperCase();
+  });
+  console.log(str);
+  return str;
+}    
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp                     
+LetterCapitalize('heelo there');
+
+
 //

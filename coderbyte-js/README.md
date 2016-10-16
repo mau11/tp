@@ -9,3 +9,5 @@
 4. Simple Adding
 
 5. Letter Capitalize
+
+6. Simple Symbol

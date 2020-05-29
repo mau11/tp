@@ -29,7 +29,7 @@ Examples
 songDecoder("WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB")
   // =>  WE ARE THE CHAMPIONS MY FRIEND*/
 var songLyrics = 'WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB';
-function songDecoder(song){  
+function songDecoder(song){
   var lyrics = song.replace(/(WUB)+/g," ").trim();
   return lyrics;
 }
@@ -100,25 +100,25 @@ function squared(x){
 }
 Array.prototype.square = function(){
   return this.map(squared);
-}
+};
 // CUBE
 function cubed(x){
   return x * x * x;
 }
 Array.prototype.cube = function(){
   return this.map(cubed);
-}
+};
 // SUM
 function summed(a, b){
   return a + b;
 }
 Array.prototype.sum = function(){
   return reduce(this, summed, 0);
-}
+};
 // AVG
 Array.prototype.average = function() {
-  return this.sum() / this.length; 
-}
+  return this.sum() / this.length;
+};
 
 // EVEN
 function evens(num){
@@ -128,7 +128,7 @@ function evens(num){
 }
 Array.prototype.even = function(){
   return this.filter(evens);
-}
+};
 // ODD
 function odds(num){
   if(!(num % 2 === 0)){
@@ -149,7 +149,7 @@ The parameter of the function findNb (find_nb, find-nb) will be an integer m and
 Examples:
 findNb(1071225) --> 45
 findNb(91716553919377) --> -1*/
-function findNb(m) { 
+function findNb(m) {
   var vol = 0;
   var n = 1;
   while(vol < m){
@@ -180,7 +180,41 @@ function squareDigits(num){
     return value * value;
   });
   //join values, convert to number
-  var results = Number(integer.join(''));
+  results = Number(integer.join(''));
   //return number
   return results;
 }
+
+
+//SUNDAY, 11/13/16
+
+//#6
+/*Write a function toWeirdCase (weirdcase in Ruby) that accepts a string, and returns the same string with all even indexed characters in each word upper cased, and all odd indexed characters in each word lower cased. The indexing just explained is zero based, so the zero-ith index is even, therefore that character should be upper cased.
+
+The passed in string will only consist of alphabetical characters and spaces(' '). Spaces will only be present if there are multiple words. Words will be separated by a single space(' ').
+
+Examples:*/
+toWeirdCase( "String" );//=> returns "StRiNg"
+toWeirdCase( "Weird string case" );//=> returns "WeIrD StRiNg
+
+function toWeirdCase(string){
+  var results = [];
+  var strArray = string.split(' ');
+  for(var i = 0; i < strArray.length; i++){//iterate over each word
+    for(var j = 0; j < strArray[i].length; j++){
+      console.log(strArray);
+      if(j === 0){//first letter, always upper case
+        var up = strArray[i][j].toUpperCase();
+        results.push(up);
+      } else if(j % 2 === 1){//odd
+        var low = (strArray[i][j]).toLowerCase();
+        results.push(low);
+      } else {//even
+        var up = strArray[i][j].toUpperCase();
+        results.push(up);
+      }
+    }
+  }
+  return results.join(' ');
+}
+//does not work

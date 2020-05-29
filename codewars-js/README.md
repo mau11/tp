@@ -9,3 +9,5 @@
 4. Building Volume
 
 5. Square Every Digit
+
+6. WeIrD StRiNg CaSe
